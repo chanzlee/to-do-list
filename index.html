@@ -8,15 +8,15 @@
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Best Places</title>
+    <title>To Do List</title>
   </head>
   <body>
     <div class="container">
-      <h1 class="animated bounce">Best Places</h1>
+      <h1 class="animated bounce">To Do List</h1>
       <div>
         <div class="row">
           <div class="col-md-6">
-            <h2>Add a place:</h2>
+            <h2>Add a task:</h2>
             <form id="add-list">
               <div class="form-group">
                 <label for="task">Task:</label>
@@ -32,14 +32,15 @@
               </div>
               <div class="form-group">
                 <label for="specific3">3rd:</label>
-                <input type="number" class="form-control" id="specific3">
+                <input type="text" class="form-control" id="specific3">
               </div>
               <div class="form-group">
                 <label for="date">Date:</label>
-                <input type="text" class="form-control" id="date">
+                <input type="date" class="form-control" id="date">
               </div>
               <button type="submit" class="btn btn-warning">Add</button>
             </form>
+
             <h2>To do list:</h2>
             <ul id="lists">
 
@@ -49,9 +50,13 @@
             <div id="show-list">
               <h2></h2>
 
-              <p>Task: <span class="landmark"></span></p>
-              <p>Specifics: <span class="yearVisited"></span></p>
-              <p>Date: <span class="note"></span></p>
+              <p>Task: <span class="task"></span></p>
+              <p>Specifics: <span class="specifics"></span></p>
+              <p>Date: <span class="date"></span></p>
+              <p>Completed: <span class="completed"></span><p>
+
+
+              <!-- <button type="button" id="completed" class="btn btn-danger">Completed</button> -->
             </div>
           </div>
 
